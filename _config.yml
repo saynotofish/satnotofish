@@ -1,0 +1,87 @@
+# ----
+# Site
+
+title: '#SayNoToFish'
+url:
+baseurl:
+google_analytics_key:
+company_name: '#SayNoToFish'
+mission_statement: 'Protect our ocean, rebuild our planet. - #SayNoToFish'
+address:
+#phone:
+email: info@saynotofish.com
+#facebook:
+instagram: say_no_to_fish
+twitter: SayNoToFish
+#youtube:
+
+# Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
+logo: /logo_transparent.png
+description: Protect our planet, don't eat fish
+author:
+  name:
+  email:
+  twitter: SayNoToFish
+social:
+  name: '#SayNoToFish'
+  links:
+
+
+# -----
+# Build
+
+timezone: Etc/UTC
+
+collections:
+  staff_members:
+    _icon: account_circle
+    _hide_content: true
+    _options:
+      image:
+        width: 250
+        height: 250
+  news:
+    output: true
+    permalink: /:collection/:path/
+
+permalink: pretty
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      _options:
+        content:
+          width: 1880
+          height: 1880
+          uploads_dir: "/images/posts/"
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENCE
+
+# -----------
+# CloudCannon
+
+_options:
+  header_background_image:
+    width: 1880
+    height: 1880
+  newsletter_background_image:
+    width: 1880
+    height: 1880

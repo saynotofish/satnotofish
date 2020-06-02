@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-lg sticky-top" id="navbar">
+  <a class="navbar-brand" href="{{ site.url }}">
+    <img src="/images/nav_bar_logo.svg" width="240" height ="39" alt="">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon">
+      <i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
+    </span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto nav-fill w-100">
+      {% for item in site.data.nav %}
+      {% if page.url == item.link %}
+        <li class="nav-item active">
+          <a class="nav-link" href="{{ item.link }}">{{ item.name }}
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        {% else %}
+        <li class="nav-item">
+          <a class="nav-link" href="{{ item.link }}">{{ item.name }}</a>
+        </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+    <div class="navbar-text nav-fill w-25">
+        <a class="twitter" href="https://twitter.com/{{ site.twitter }}">
+          {% include icons/social-media.html social_icon="twitter" %}
+        </a>
+        <a class="instagram" href="https://instagram.com/{{ site.instagram }}">
+          {% include icons/social-media.html social_icon="instagram" %}
+        </a>
+    </div>
+  </div>
+</nav>

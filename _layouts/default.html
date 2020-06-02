@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+
+	{% include head.html %}
+
+	<body>
+		{% include navbar.html %}
+		<div class="content">
+			{{ content }}
+		</div>
+		<footer>
+			<div class="container">
+				<div class="about">
+					<p>{{ site.mission_statement }}</p>
+				</div>
+
+				<div class="contact">
+					<!-- include this bit to maintain spacing -->
+				</div>
+
+				<div class="sharing">
+					<a class="twitter" href="https://twitter.com/{{ site.twitter }}">
+						{% include icons/social-media.html social_icon="twitter" %}
+					</a>
+					<a class="instagram" href="https://www.instagram.com/{{ site.instagram }}">
+						{% include icons/social-media.html social_icon="instagram" %}
+					</a>
+				</div>
+			</div>
+		</footer>
+		<p class="copyright">
+			<a href="#">
+				#SayNoToFish 2020
+			</a>
+		</p>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script type="text/javascript">
+			$('a[href*=\\#]').on('click', function(event){
+				var el = $(this.hash);
+				if (el.length > 0) {
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top -240}, 500);
+				}
+			});
+		</script>
+	</body>
+</html>

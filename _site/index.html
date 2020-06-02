@@ -1,0 +1,505 @@
+<!doctype html>
+<html>
+
+	<head>
+  <!-- Add BootStrap CDN -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!-- Add font awesome support -->
+  <script src="https://kit.fontawesome.com/89afa0d8fb.js" crossorigin="anonymous"></script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>#SayNoToFish | Protect our planet, don’t eat fish</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="#SayNoToFish" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Protect our planet, don’t eat fish" />
+<meta property="og:description" content="Protect our planet, don’t eat fish" />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
+<meta property="og:site_name" content="#SayNoToFish" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="#SayNoToFish" />
+<meta name="twitter:site" content="@" />
+<meta name="twitter:creator" content="@SayNoToFish" />
+<script type="application/ld+json">
+{"@type":"WebSite","url":"http://localhost:4000/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/logo_transparent.png"}},"name":"#SayNoToFish","headline":"#SayNoToFish","description":"Protect our planet, don’t eat fish","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+  <link rel="stylesheet" href="/css/screen.css">
+  <link rel="icon" type="image/png" href="/favicon.png" sizes="32x32">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+  
+
+  <!-- Add twitter card configuration -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@SayNoToFish">
+  <meta name="twitter:creator" content="@SayNoToFish">
+  <meta name="twitter:title" content="#SayNoToFish">
+  <meta name="twitter:description" content="Committing to preserving the global ocean">
+  <meta name="twitter:image" content="/images/TwitterCardSimple.png">
+  <!-- <meta name="twitter:image" content=""> -->
+</head>
+
+
+	<body>
+		<nav class="navbar navbar-expand-lg sticky-top" id="navbar">
+  <a class="navbar-brand" href="http://localhost:4000">
+    <img src="/images/nav_bar_logo.svg" width="240" height ="39" alt="">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon">
+      <i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
+    </span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto nav-fill w-100">
+      
+      
+        <li class="nav-item">
+          <a class="nav-link" href="/#manifesto">Why #SayNoToFish?</a>
+        </li>
+        
+      
+      
+        <li class="nav-item">
+          <a class="nav-link" href="/#take_action">Take Action</a>
+        </li>
+        
+      
+      
+        <li class="nav-item">
+          <a class="nav-link" href="/#news">Relevant News</a>
+        </li>
+        
+      
+      
+        <li class="nav-item">
+          <a class="nav-link" href="/#faqs">FAQs</a>
+        </li>
+        
+      
+    </ul>
+    <div class="navbar-text nav-fill w-25">
+        <a class="twitter" href="https://twitter.com/SayNoToFish">
+          
+		<svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z" /></svg>
+	
+
+        </a>
+        <a class="instagram" href="https://instagram.com/say_no_to_fish">
+          
+		<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24"><path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" /></svg>
+	
+
+        </a>
+    </div>
+  </div>
+</nav>
+
+		<div class="content">
+			<header>
+	<div class="container">
+		<div class="column">
+			<div>
+				<h1>#SayNoToFish</h1>
+				<p >We need to wake up to the threats facing our Global Ocean and act to protect it. Until then #SayNoToFish #SayNoToSeafood</p>
+				<div class="button">
+					<a href="#manifesto">Read More</a>
+				</div>
+			</div>
+		</div>
+		<div class="column">
+			<img src="/images/sntf_cluster.png" alt="School">
+		</div>
+	</div>
+</header>
+
+<hr width="200">
+<div class="container" id="manifesto">
+    <h2  style="text-align: center;">Why #SayNoToFish?</h2>
+    <h3  style="text-align: left;"><strong>Most people in the UK would say they don’t eat wild animals. But they do. They eat fish.</strong></h3>
+    <p  style="text-align: left;">
+        The vast majority of fish sold across the world is caught directly from our global ocean. These are wild animals, owned by no one, captured en masse by a global fleet equipped to remove billions, if not trillions, of fish from our oceans every single year <a href="https://www.forbes.com/sites/michaelpellmanrowland/2017/07/24/seafood-sustainability-facts/#50c08734bbfe">(Forbes)</a>.
+        <br><br>
+        Historically people have assumed that our global ocean is a limitless pot from which we can keep taking without consequence. Stock collapse around the world over the last seven decades proves this is completely false.
+        <br><br>
+        You simply cannot continue to remove billions of tonnes of the biomass year after year, decade after decade, and expect our global ocean to replenish itself.
+        <br><br>
+        We need to act now to protect the marine environment. Ending overfishing is critical to this.
+        <br><br>
+        Until we do, those who have the luxury of choice need to think carefully about the choices they are making.
+    </p>
+    <h3  style="text-align: left;"><strong>That is why we are calling on you to <span style="text-decoration: underline;">#SayNoToFish</span></strong></h3>
+    <p  style="text-align: left;">
+        ... At least for now. And for the foreseeable future.
+        <br><br>
+        This is about raising environmental standards, helping to build a more sustainable system, one in which nature is abundant, and humans reap only what they sow.
+        <br><br>
+        The best thing about this change is that it is totally achievable. Once you start, it’s actually quite easy to give up fish in the UK today.
+        <br><br>
+        You can <strong>#SayNoToFish</strong>. You can say no to battered cod. You can say no to fish fingers. You can say no to sushi. You can say no to a tuna sandwich, even if it’s pole and line caught. You can say no to mussels, prawns and scallops.  <strong>Just say no. #SayNoToFish.</strong>
+        <br><br>
+        Think about the fact that salmon travel the ocean for thousands of miles, but - years later - still find their way back to the exact same stream into which they hatched, sniffing out their ‘home water’ molecule by molecule. Think about the fact that an Atlantic Bluefin Tuna can weigh up to 2000lbs <a href="https://www.worldwildlife.org/species/tuna">(WWF)</a>, grow up two metres in length and travel at over 40 miles per hour and that they are critically endangered. Think about the fact that cod can live to be 40 years old, and that they get more productive the older they get.
+        <br><br>
+        These are magnificent, majestic and mysterious creatures. Some of the fish that people regularly consume, we know very little about. Consumers may not even know what fish they are actually eating, because so much is mislabelled. For many species, we don’t know their life-cycles. We don’t know where they breed. We don’t know how old they can live to be. There is still so much to learn.
+        <br><br>
+        If you are not willing to tolerate the destruction of our global ocean any longer, then join this movement: <strong>#SayNoToFish.</strong>
+    </p>
+</div>
+
+<hr width="200">
+<div class="container" id="take_action">
+    <h2  style="text-align: center;">Take Action Now</h2>
+
+    <div class="thirds">
+        <li>
+            <a href="#pledge">
+                <div class="image">
+	<span style="font-size: 3em; color: #2d8c92;">
+		<i class="far fa-heart"></i>
+	</span>
+
+	
+</div>
+                <h3 >Make Your Pledge</h3>
+                <p >Tweet your support for #SayNoToFish</p>
+            </a>
+        </li>
+
+        <li>
+            <a href="#support">
+                <div class="image">
+	<span style="font-size: 3em; color: #2d8c92;">
+		<i class="far fa-life-ring"></i>
+	</span>
+
+
+</div>
+                <h3 >Support Ocean Conservation</h3>
+                <p >Support the charities and organisations acting to challenge overfishing and protect the Global Ocean</p>
+            </a>
+        </li>
+
+        <li>
+            <a href="#get_informed">
+                <div class="image">
+	<span style="font-size: 3em; color: #2d8c92;">
+		<i class="fas fa-binoculars"></i>
+	</span>
+
+	
+</div>
+                <h3 >Get Informed</h3>
+                <p >Read up on overfishing and the other threats facing the Global Ocean</p>
+            </a>
+        </li>
+    </div>
+
+</div>
+
+<hr width=”200″>
+
+<div class="container" id="pledge">
+    <div class="columns">
+        <div>
+            <h2>Make Your Pledge</h2>
+            <p>Click here to share your commitment to #SayNoToFish. </p>
+            <a href="https://twitter.com/intent/tweet?button_hashtag&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-size="large" data-hashtags="SayNoToFish" data-url="pic.twitter.com/YljSkEppLT" data-lang="en" data-show-count="true">Tweet Your Pledge</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div>
+            <blockquote class="twitter-tweet"><p lang="und" dir="ltr"><a href="https://t.co/YljSkEppLT">pic.twitter.com/YljSkEppLT</a></p>&mdash; @SayNoToFish (@saynotofish) <a href="https://twitter.com/saynotofish/status/1263870879563419649?ref_src=twsrc%5Etfw">May 22, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+    </div>
+</div>
+
+<hr width=”200″>
+<div class="container" id="support">
+    <h2  style="text-align: center;">Support Ocean Conservation</h2>
+    <p  style="text-align: left;">
+        Get involved in ocean conservation and support organisations working to challenge overfishing and protecting our Global Ocean. There’s plenty of material online, so you can try and find events and activities local to you, or think about supporting a a global campaigning organisation. For more information visit:
+    </p>
+    <ul>
+        <li><a href="https://www.mcsuk.org/?gclid=CjwKCAjw5Ij2BRBdEiwA0Frc9e8O0Wwhk6PYjbw7TqO21OjmoRfCKFQKElStP6dEQbK8Z_tmBVnm_hoCDGEQAvD_BwE">Marine Conservation Society UK</a></li>
+        <li><a href="https://www.seashepherd.org.uk/?gclid=CjwKCAjw5Ij2BRBdEiwA0Frc9WnlhzPZZK9XPZQHsYDkUN7-A092L09k7n6BJERujiuaNDuHAhQf0BoC3L4QAvD_BwE">SeaShepherd</a></li>
+        <li><a href="https://www.pewtrusts.org/en/topics/oceans">Pew Trusts</a></li>
+    </ul>
+
+</div>
+
+<hr width="200">
+
+<div class="container" id="get_informed">
+    <h2 style="text-align: center;">Get Informed</h2>
+    <h3 style="text-align: left;"><strong>Must Reads</strong></h3>
+    <p style="text-align: left;">
+    <p>A selection of highly readable books offering in-depth insight into the multiple threats facing the Global Ocean today:</p>
+    <ul>
+        <li>
+            Charles Clover - <a href="https://www.penguin.co.uk/books/102/1021465/the-end-of-the-line/9780091897819.html">The End of the Line</a> (Ebury Press - 2005)
+        </li>
+        <li>
+            Sylvia Earle - <a href="https://www.penguinrandomhouse.com/books/44486/the-world-is-blue-by-sylvia-earle-with-a-foreword-by-bill-mckibben/">The World is Blue: How our fate and the oceans are one</a> (National Geographic Society 2010)
+        </li>
+        <li>
+            Callum Roberts - <a href="https://www.waterstones.com/book/the-unnatural-history-of-the-sea/callum-roberts/9781597265775">The Unnatural History of the Sea</a> (Island Press - 2009)
+        </li>
+        <li>
+            Callum Roberts - <a href="https://www.penguin.co.uk/books/179/179580/ocean-of-life/9780241950708.html">The Ocean of Life</a> (Penguin Books - 2013)
+        </li>
+        <li>
+            Alex Rogers - <a href="http://waterstones.com/book/the-deep/alex-rogers/9781472253934">The Deep: The Hidden Wonders of Our Oceans and How We Can Protect Them</a> (Headline Publishing Group - 2019)
+        </li>
+    </ul>
+    <h3 style="text-align: left;"><strong>Topical Short Reads</strong></h3>
+    <p  style="text-align: left;"></p>
+    <ul>
+        <li>
+            National Geographic - <a href="https://www.nationalgeographic.co.uk/environment-and-conservation/2019/10/overfishing-emptying-our-seas-despite-countries-pledges-stop">Overfishing is emptying our seas - despite countries pledging to stop it</a> (9 October 2019)
+        </li>
+        <li>
+            George Monibot - <a href="https://www.theguardian.com/commentisfree/2019/may/09/seas-stop-eating-fish-fishing-industry-government">Stop eating fish. It's the only way to save the life in our seas</a> (The Guardian, 9 May 2019)
+        </li>
+        <li>
+            The Economist - <a href="https://www.economist.com/briefing/2017/05/26/getting-serious-about-overfishing">Getting serious about overfishing</a> (The Economist, 27 May 2017)
+        </li>
+    </ul>
+</div>
+
+
+<hr width="200">
+<div class="container" id="news">
+    <h2 >Relevant News</h2>
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            
+            <div class="carousel-item active">
+                <div class="card" style="width: 20rem;">
+                    <img class="card-img-top" src="https://i.guim.co.uk/img/media/f1e8dddec09af6b408cd8be21df4f4b4c7900a7c/137_0_2863_1718/master/2863.jpg?width=700&quality=85&auto=format&fit=max&s=9327c8a0c503cbe3f5a9d8c937a5bd8f" alt="Card image cap">
+                    <div class="card-body">
+                        <h5>Guardian</h5>
+                        <small>Karen McVeigh</small>
+                        <h3>Bid to grant MSC 'ecolabel' to bluefin tuna fishery raises fears for ‘king of fish’</h3>
+                        <p>Conservationists warn the species, which was almost extinct 10 years ago, could be under threat if Japanese fishery is MSC certified</p>
+
+
+                        <div class="col text-center">
+                            <a href="https://www.theguardian.com/environment/2020/jun/01/bid-for-first-eco-labelled-bluefin-tuna-raises-fears-for-protection-of-king-of-fish?CMP=twt_a-environment_b-gdneco" class="btn btn-primary">Read More ...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="carousel-item">
+                <div class="card" style="width: 20rem;">
+                    <img class="card-img-top" src="https://static.politico.com/dims4/default/a37866f/2147483647/resize/971x/quality/90/?url=https%3A%2F%2Fstatic.politico.com%2F3f%2F0c%2Fa405aa154303bab8483ab23e70a7%2Fwebp.net-resizeimage%20%286%29.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5>Politico</h5>
+                        <small>Louise Guillot and Aitor Hernandez-Morales</small>
+                        <h3>Fish flourish under lockdown - but fishermen flounder</h3>
+                        <p>The pandemic is keeping boats at home, raising the possibility that fish stocks could rebound.</p>
+
+
+                        <div class="col text-center">
+                            <a href="https://www.politico.com/news/2020/05/12/fish-flourish-under-lockdown-but-fishermen-flounder-251006" class="btn btn-primary">Read More ...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="carousel-item">
+                <div class="card" style="width: 20rem;">
+                    <img class="card-img-top" src="https://i.guim.co.uk/img/media/23a1fca318891e86f64ae91dfd9b5906a704fede/0_106_3188_1913/master/3188.jpg?width=965&quality=85&auto=format&fit=max&s=c72474850b8823b0e55a98f44df26d2c" alt="Card image cap">
+                    <div class="card-body">
+                        <h5>Guardian</h5>
+                        <small>Jonathan Watts</small>
+                        <h3>Stealth plunder of Argentinian waters raises fears over marine monitoring</h3>
+                        <p>Green groups fear coronavirus lockdown has weakened environmental protections.</p>
+
+
+                        <div class="col text-center">
+                            <a href="https://www.theguardian.com/environment/2020/may/01/stealth-plunder-of-argentinian-waters-raises-fears-over-marine-monitoring" class="btn btn-primary">Read More ...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="carousel-item">
+                <div class="card" style="width: 20rem;">
+                    <img class="card-img-top" src="https://inews.co.uk/images-i.jpimedia.uk/imagefetch/https://inews.co.uk/wp-content/uploads/2019/12/GettyImages-79162522.jpg?crop=982:524,smart&width=990" alt="Card image cap">
+                    <div class="card-body">
+                        <h5>inews.co.uk</h5>
+                        <small>Cahal Milmo</small>
+                        <h3>Britian responsible for the highest level of overfishing in Europe for past two decades, report finds</h3>
+                        <p>Britain is responsible for the highest quantity of over-fishing in Europe over the last two decades, landing nearly two million tonnes of fish above levels advised by scientists, according to a report.</p>
+
+                        <div class="col text-center">
+                            <a href="https://inews.co.uk/news/britain-highest-level-overfishing-europe-defra-investigation-2565876" class="btn btn-primary">Read More ...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="carousel-item">
+                <div class="card" style="width: 20rem;">
+                    <img class="card-img-top" src="https://i.guim.co.uk/img/media/c85b8f3004bc71fef316243687af16d9fcffc232/0_323_4928_2957/master/4928.jpg?width=700&quality=85&auto=format&fit=max&s=195c0484d70283d2945f409b321edbd8" alt="Card image cap">
+                    <div class="card-body">
+                        <h5>Guardian</h5>
+                        <small>George Monbiot</small>
+                        <h3>We should stop buying fish until the industry stops slaughtering dolphins</h3>
+                        <p>Britain and the EU are complicit in hundreds of deaths a year in their refusal to impose effective rules on commercial fishing</p>
+
+                        <div class="col text-center">
+                            <a href="https://www.theguardian.com/commentisfree/2020/mar/12/stop-buying-fish-dolphins-slaughtered" class="btn btn-primary">Read More ...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="carousel-item">
+                <div class="card" style="width: 20rem;">
+                    <img class="card-img-top" src="https://geographical.co.uk/media/k2/items/cache/b7bfa0de06c32dfbda80fde5fb8a7710_XL.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5>Geographical</h5>
+                        <small>Eveline Vouillemin</small>
+                        <h3>European Commission imposes emergency fishing ban to save Baltic cod</h3>
+                        <p>A temporary fishing ban has been imposed by the European Commission until 2020 in an attempt to save Baltic cod stock from impending collapse</p>
+
+
+                        <div class="col text-center">
+                            <a href="https://geographical.co.uk/nature/oceans/item/3298-cod-ban" class="btn btn-primary">Read More ...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span aria-hidden="true"><i class="fas fa-chevron-circle-left"></i></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span aria-hidden="true"><i class="fas fa-chevron-circle-right"></i></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<hr width="200">
+
+<div class="container" id="faqs">
+    <h2  style="text-align: center;">Frequently Asked Questions</h2>
+    <h3  style="text-align: left;"><strong>“Why am I still able to buy so much fish and seafood in my local supermarket? If they are that hard to find, surely they would cost a lot more? Fish seems pretty affordable and pretty plentiful to me.”</strong></h3>
+    <p  style="text-align: left;">
+        You’re right - part of the issue with overfishing is the illusion of plenty that is maintained in our stores, where we’re divorced from the reality of where our food comes from. In fact, the UK fleet, and fishing fleets across the world, are travelling further and working harder, with more sophisticated equipment, to find fish. But they are catching less per mile travelled than they did in the past.
+        <br><br>
+        Since the 1950s the number of vessels out fishing has doubled to 3.7million. But despite better technology, more efficient landing gear and bigger holds to fill, today’s ships catch less and take longer than those out at sea some 70 years ago <a href="https://www.sciencemag.org/news/2019/05/fishing-fleets-have-doubled-1950-theyre-having-harder-time-catching-fish">(Science Mag)</a>. The reason is simple: there are fewer fish and they are harder to find.
+        <br><br>
+        So the only reason shelves are stocked is because we are making more effort to find fish in remote places using new technology and bigger boats, and we are farming more fish than ever before, artificially inflating our stockpile.
+    </p>
+    <h3  style="text-align: left;"><strong>What about <em>"sustainably sourced"</em> fish and seafood?</strong></h3>
+    <p  style="text-align: left;">
+        Without ownership, the situation in our Global Ocean is a classic ‘tragedy of the commons’. Whilst many nations set quotas for catching limited quantities of key species in their coastal waters, the reality is that some 20% of all fish caught around the world is fished illegally, completely unregulated and goes unreported <a href="https://www.pewtrusts.org/en/research-and-analysis/articles/2013/02/25/illegal-unreported-and-unregulated-fishing-frequently-asked-questions">(Pew Trust)</a>. The total value of this catch for the global economy is estimated to be between $10 and $20 billion US <a href="https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0004570&type=printable">(Agnew et al. 2009)</a>.
+        <br><br>
+        As well as the vast scale of unregulated and unreported catch, an estimated 10% of biomass fished from the ocean is thrown back in, without ever making it into the food chain <a href="https://www.reuters.com/article/us-environment-fish-idUSKBN19H1A8">(Reuters)</a>. This system, including all that illegal, unreported and wasted catch, is fuelling a worldwide seafood market worth over $125,000 million USD <a href="https://www.alliedmarketresearch.com/seafood-market">(Allied Market Research)</a>. Demand is seemingly insatiable. "Sustainably sourced" fish and seafood are certainly a better choice, but they still fuel wider demand for an overexploited commodity.
+        <br><br>
+        In terms of achieving meaningful change, we must first look at how our Global Ocean is exploited.
+        At present vast swathes of the open ocean - the High Seas - are owned by no one. Perhaps it should stay that way, but if no one owns it, no one should be allowed to pillage from it for financial gain. There is a strong case to be made for a complete ban on fishing in the High Seas.
+        <br><br>
+        Rather than the current assumption that it belongs to no-one, and therefore everyone has a right to take it, we must reverse our framing: it belongs to no-one, except those who live in it. The fish themselves, not mention millions all the other marine species (both known and unknown to science). But that would require policing, and as yet world-leading institutions like the UN have yet to find an effective way to keep an eye on the High Seas.
+    </p>
+    <h3  style="text-align: left;"><strong>What about farmed fish?</strong></h3>
+    <p  style="text-align: left;">
+        Unfortunately, choosing farmed fish is not the simple solution you might expect. Perhaps it can be in the future, but not until we find a way to farm fish to a higher standard, in terms of both its environmental impact and its animal welfare record.
+        <br><br>
+        A key issue is what we feed our farmed fish on. Fish fed on vegetable based proteins and other fillers produces fish that have less nutritional value than we would expect of their wild-caught cousins. The best quality farmed fish - and this is the real kicker - are actually fed mainly on wild caught fish, like anchovies and sardines, just adding to the wider depletion of wildlife inhabiting the Global Ocean.
+        <br><br>
+        On top of this, lice infestation is a real problem in a lot of fish farms. In worst case situations, for example in intensively farmed salmon, lice are moving beyond the man-made farming pens and entering the wild population, damaging their ability to survive and thrive. So our farmed salmon is costing us wild salmon.
+        <br><br>
+        Finally, the eco-systems beneath too many farmed fish pens become dead zones due to the build of waste products from the millions of animals kept in one place, much like caged hens.
+        <br><br>
+        It seems like farmed fish offer no silver bullet. In fact, fish farming can create new problems, whilst exacerbating the problems facing global fishing more generally.
+    </p>
+    <h3  style="text-align: left;"><strong>Should we give up hope?</strong></h3>
+    <p  style="text-align: left;">
+        The great irony here is that our Global Ocean has the potential - in fact, the proven capacity - to be vastly more productive than it is now. But not if we continue this spiral of depletion.
+        <br><br>
+        This is not just about industrial scale fishing. It’s about dumping pollutants into our ocean. It’s about shipping vessel traffic disrupting migration routes. It’s about the warming and acidification of our Global Ocean as a result of climate change. It’s about plastic pollution harming marine life. All of these factors are making our ocean less hospitable and less able to support an abundance of life.
+        <br><br>
+        That is why - alongside tackling all of the problems I have just listed - we need to preserve the life that already exists within it, to give it the best chance to reboot and replenish.
+    </p>
+    <h3  style="text-align: left;"><strong>What about the people who depend on fishing to make a living? </strong></h3>
+    <p  style="text-align: left;">
+        The aim of #SayNoToFish is to contribute to the restoration of the Global Ocean by helping to challenge industrial overfishing around the world. It is not intended to destroy the livelihoods of the majority who fish responsibly and care for the oceans on which their livelihoods depend.
+        <br><br>
+        If #SayNoToFish can help to end the industrial scale plundering of the oceans, then those who fish sustainably will flourish. #SayNoToFish is about getting people to recognise and pay for the true cost of the fish and seafood that they choose to eat. Ultimately, ending destructive fishing practices will benefit all those who fish responsibly. The rest merely profit from tomorrow’s catch today.
+    </p>
+    <h3  style="text-align: left;"><strong>What about subsistence fishers, or places where fish is the most viable source of food?</strong></h3>
+    <p  style="text-align: left;">
+        The aim of #SayNoToFish is to help stop overfishing at an industrial scale and promote ocean conservation around the world. Ending overfishing is an essential step if we are to restore the health and vitality of our oceans, as is the massive expansion of marine protected areas.
+        <br><br>
+        #SayNoToFish aims to get those who choose to eat fish - but have the resources to make a different choice - to change this habit or, at the very least, make a choice to buy locally caught fish and seafood from small-scale fishers, benefiting their local community and economy.
+    </p>
+    <br>
+    <div class="button" style="text-align: center">
+        <a href="http://localhost:4000/#">Back to Top</a>
+    </div>
+</div>
+
+
+		</div>
+		<footer>
+			<div class="container">
+				<div class="about">
+					<p>Protect our ocean, rebuild our planet. - #SayNoToFish</p>
+				</div>
+
+				<div class="contact">
+					<!-- include this bit to maintain spacing -->
+				</div>
+
+				<div class="sharing">
+					<a class="twitter" href="https://twitter.com/SayNoToFish">
+						
+		<svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z" /></svg>
+	
+
+					</a>
+					<a class="instagram" href="https://www.instagram.com/say_no_to_fish">
+						
+		<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24"><path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" /></svg>
+	
+
+					</a>
+				</div>
+			</div>
+		</footer>
+		<p class="copyright">
+			<a href="#">
+				#SayNoToFish 2020
+			</a>
+		</p>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script type="text/javascript">
+			$('a[href*=\\#]').on('click', function(event){
+				var el = $(this.hash);
+				if (el.length > 0) {
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top -240}, 500);
+				}
+			});
+		</script>
+	</body>
+</html>
